@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skin Cancer Detection Webapp - Registration Page</title>
+  </head>
+  <body>
+    <h1>Register for the Skin Cancer Detection Webapp</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button onclick="register()">Register</button>
+    </form>
+    <script>
+      function register() {
+        // Add your registration validation code here
+        // If registration is successful, redirect to the login page
+        location.href = 'page2.html';
+      }
+    </script>
+  </body>
+</html>

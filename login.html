@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skin Cancer Detection Webapp - Login Page</title>
+  </head>
+  <body>
+    <h1>Login to the Skin Cancer Detection Webapp</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button onclick="login()">Login</button>
+    </form>
+    <p>Don't have an account? Click the button below to register:</p>
+    <button onclick="location.href='page3.html'">Register</button>
+    <script>
+      function login() {
+        // Add your login validation code here
+        // If login is successful, redirect to the main webapp page
+        location.href = 'webapp.html';
+      }
+    </script>
+  </body>
+</html>

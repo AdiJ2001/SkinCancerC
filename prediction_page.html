@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skin Cancer Detection Webapp - Prediction Page</title>
+  </head>
+  <body>
+    <h1>Predict the Type of Skin Cancer</h1>
+    <p>Welcome back, [insert user name]! Please upload an image of the skin lesion and provide some patient details below to predict the type of skin cancer:</p>
+    <form>
+      <label for="image">Upload an image of the skin lesion:</label>
+      <input type="file" id="image" name="image"><br><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"><br><br>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br><br>
+      <label for="location">Location of the lesion:</label>
+      <input type="text" id="location" name="location"><br><br>
+      <button onclick="predict()">Predict</button>
+    </form>
+    <div id="prediction">
+      <!-- The predicted graph will be displayed here -->
+    </div>
+    <script>
+      function predict() {
+        // Add your prediction code here
+        // Display the predicted graph in the prediction div
+        // For example:
+        document.getElementById("prediction").innerHTML = "<img src='predicted_graph.png'>";
+      }
+    </script>
+  </body>
+</html>
